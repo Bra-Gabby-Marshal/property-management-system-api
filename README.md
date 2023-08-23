@@ -64,3 +64,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+Below is the link to the documentation
+https://thestartupcto.org/laravel-api-tutorial-build-a-secure-rest-api-in-php-using-laravel-passport-oauth2-0-f74d1f78c01a

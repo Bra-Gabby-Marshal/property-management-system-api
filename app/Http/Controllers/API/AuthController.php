@@ -6,6 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 
+/**
+ * @group Login Management
+ *
+ * APIs to manage the user registration, and login
+ **/
 class AuthController extends Controller
 {
     //

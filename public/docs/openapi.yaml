@@ -1,0 +1,160 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/register:
+    post:
+      summary: ''
+      operationId: postApiRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 55 characters.'
+                  example: kxr
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: billie54@example.org
+                password:
+                  type: string
+                  description: ''
+                  example: reprehenderit
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/login:
+    post:
+      summary: ''
+      operationId: postApiLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: eden95@example.org
+                password:
+                  type: string
+                  description: ''
+                  example: facere
+              required:
+                - email
+                - password
+      security: []
+  /api/property:
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                property_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ufu
+                address:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: rhmjgvdztd
+                city:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: dzvglcwyavucfmzrvyiuyejqr
+                country:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ndsnarjzfs
+                type:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: xwallnqgi
+                minimum_price:
+                  type: string
+                  description: ''
+                  example: ipsa
+                maximum_price:
+                  type: string
+                  description: ''
+                  example: quia
+                ready_to_sell:
+                  type: string
+                  description: ''
+                  example: ut
+              required:
+                - property_name
+                - address
+                - city
+                - country
+                - type
+                - minimum_price
+                - maximum_price
+                - ready_to_sell
+      security: []
+  '/api/property/{id}':
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the property.'
+        example: 7
+        required: true
+        schema:
+          type: integer
+tags:
+  -
+    name: Endpoints
+    description: ''

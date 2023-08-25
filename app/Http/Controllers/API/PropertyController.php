@@ -8,10 +8,16 @@ use App\Http\Resources\PropertyResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+/**
+ * @group Property Management
+ *
+ * APIs to manage the Property
+ **/
+
 class PropertyController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the Proprties.
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -22,7 +28,7 @@ class PropertyController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created Property
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -53,7 +59,7 @@ class PropertyController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified Property.
      * @param  \App\Property  $property
      * @return \Illuminate\Http\Response
      */
@@ -65,7 +71,7 @@ class PropertyController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified Property.
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Property  $property
      * @return \Illuminate\Http\Response
@@ -80,7 +86,7 @@ class PropertyController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specifiedProperty.
      * @param \App\Property $property
      * @return \Illuminate\Http\Response
      * @throws \Exception
